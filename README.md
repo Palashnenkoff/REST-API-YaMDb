@@ -34,11 +34,9 @@ pip install -r requirements.txt
 ```
 Зайти в директорию приложения и выполнить миграции:
 ```
-cd yatube_api
+cd api_yamdb
 
-python3 manage.py migrate users
-python3 manage.py migrate titles
-python3 manage.py migrate reviews
+python manage.py migrate
 ```
 Вам может пригодиться супер-пользователь - он позволяет быстро и удобно создавать пользователей, посты, комментарии и другие сущности.
 Для этого вам будет, находясь в директории `secure_blog/secure_blog/`, выполнить следующие команды:
@@ -49,4 +47,7 @@ python3 manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+
 Панель админа будет доступна по ссылке: `localhost:8000/admin/`
+
+Для знакомства со всем возможностями проекта запустите локальный сервер и посетите [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
